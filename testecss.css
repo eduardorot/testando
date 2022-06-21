@@ -1,0 +1,41 @@
+.slid{
+    margin: auto;
+    max-width: 360px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+.slid img{
+    margin-left: 0px;
+    margin-right: 5px;
+    width: 120px;
+    height: 120px;
+}
+
+#um{
+    position:absolute;
+    width: 64px;
+    margin-top: 28px;
+    margin-left: 90%;
+    height: 64px;
+    background: none;
+    border: none;
+    outline: none;
+}
+#outro{
+    position: relative;
+    margin: -13%;
+    margin-top: 28px;
+    height: 64px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.retira{
+    margin-left: -125px;
+    transition: 1.5s;
+}
+.volta{
+    margin-left: 0px;
+    transition: 1.5s;
+}

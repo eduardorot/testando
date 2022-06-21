@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 70px;
+    position: sticky;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    background-color: #e9feff;
+}
+
+/*--ÍNÍCIO HEADER--*/
+#main {
+    /*IDENTIFICAÇÃO DE PÁGINA ATIVA*/
+    color: #05333b;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: DejaVu Sans Mono, monospace;
+    background-color: #399b9e;
+    padding: 12px;
+    width: 100%;
+}
+
+.ul1 {
+    list-style: none;
+    display: flex;
+}
+
+.ul1 li {
+    letter-spacing: 0.8px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.a1 {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.a1:hover {
+    opacity: 0.8;
+}
+
+p {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+}
+
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*--FIM HEADER--*/
+
+/*--INÍCIO ANÚNCIOS--*/
+input {
+    display: none;
+}
+
+.slides {
+    margin: auto;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+}
+
+.navg {
+    top: -27px;
+    width: 100%;
+    position: static;
+    display: inline-flex;
+}
+
+.div1 {
+    margin: auto;
+    background-color: #399b9e;
+    width: 1000px;
+    height: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.but {
+    font-size: 10px;
+    display: inline;
+    border: 1px solid #ffffff;
+    padding: 0px 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.but:last-child {
+    margin-right: 0px;
+}
+
+.but:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.slide{
+    max-width: 4000px;
+    transition: 1.5s;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -1000px;
+}
+
+#radio3:checked~.first {
+    margin-left: -2000px;
+}
+
+#radio4:checked~.first {
+    margin-left: -3000px;
+}
+/*--FIM ANÚNCIOS--*/
+
+/*--INÍCIO RESPONSIVIDADE--*/
+@media(max-width: 840px) {
+
+    nav,
+    .ul1 {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .ul1 {
+        position: relative;
+        visibility: hidden;
+        height: 0;
+    }
+
+}
+
+@media(max-width:240px) {
+    .logo {
+        display: inline;
+        padding: 0px;
+    }
+}
+
+@media(max-width:202px) {
+    .logo {
+        font-size: 10px;
+    }
+}
+/*--FIM RESPONSIVIDADE--*/
+
+/*--INÍCIO DESCONTOS SEMANAIS--*/
+#tadesc {
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+#tdesc {
+    text-align: center;
+    margin: 0;
+    padding: 10px; 
+    padding-top: 0px;
+}
+/*--FIM DESCONTOS SEMANAIS*/
+
+/*--INÍCIO HISTÓRIA--*/
+.marg {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    max-width: 1300px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.frase {
+    max-width: 600px;
+    text-align: justify;
+    margin-right: 15px;
+    color: #fff;
+    text-shadow: 1.5px 1.5px 2px #05333b;
+    font-size: 20px;
+    font-family: Noto Sans, sans-serif;
+    background-color: #399b9e;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #05333b;
+}
+
+.frase:last-child {
+    margin-right: 0px;
+}
+
+.foto {
+    max-width: 250px;
+    max-height: 190px;
+    background-color: #05333b;
+    display: block;
+    margin-right: 20px;
+}
+
+.foto:last-child{
+    margin-right: 0px;
+}
+
+.hist {
+    margin: auto;
+    max-width: 1300px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hist1 {
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+    text-shadow: 1.5px 1.5px 2px #05333b;
+    font-size: 18px;
+    font-family: Noto Sans, sans-serif;
+    background-color: #399b9e;
+    padding: 15px;
+    border: 1px solid #05333b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1 {
+    margin: 10px;
+}
+
+.p2{
+    margin: auto;
+    width: 1000px;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: DejaVu Sans Mono, monospace;
+    color: #05333b;
+}
+
+/*--FIM HISTÓRIA--*/
+
+
+
+/* coisa do retardado do eduardo */
+#retira{
+    margin-left: 1000px;
+    position: fixed;
+    height: 400px;
+    background: none;
+    border: 5px solid #e9feff
+}
+#adiciona{
+   position: fixed;
+   height: 400px;
+   width: 50px;
+   margin-left: -50px;
+   background: none;
+   border: 5px solid #e9feff
+}
